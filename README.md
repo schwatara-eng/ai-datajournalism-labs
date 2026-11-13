@@ -34,8 +34,8 @@ Whisper는 ffmpeg도 필요해요: `winget install ffmpeg` (설치 후 VS Code �
 
 ## GPU는 어디서 쓰나요?
 - **pandas·그래프·크롤링**: CPU로 충분해요. GPU가 있어도 빨라지지 않아요.
-- **pandas를 GPU로(선택)**: 환경 준비 칸의 `USE_GPU_PANDAS = True` — Colab GPU 런타임 또는 Linux/WSL + cuDF에서만 동작, 아니면 자동으로 일반 pandas
-- **모델 실행**: Ollama는 GPU가 있으면 알아서 GPU를 써요 (4_파인튜닝/4_compare_results · 5_weather_tone_test). 설치는 `4_파인튜닝/setup_ollama.ps1`
+- **pandas를 GPU로(선택)**: 환경 준비 칸의 `USE_GPU_PANDAS = True` — Colab GPU 런타임 또는 Linux/WSL + 
+가 있으면 알아서 GPU를 써요 (4_파인튜닝/4_compare_results · 5_weather_tone_test). 설치는 `4_파인튜닝/setup_ollama.ps1`
 - **임베딩·음성 인식**: 기사 제목 묶기(sentence-transformers), 받아쓰기(Whisper) — GPU면 몇 초~1분, CPU면 수 분~수십 분
 - **모델 학습**: 강의장은 Unsloth Studio(화면), 코드로는 4_파인튜닝/2_train_unsloth_gpu.ipynb (Colab T4 또는 GPU PC)
 
